@@ -31,7 +31,6 @@ var QRCode;
 		this.data = data;
 		this.parsedData = [];
 
-		// Added to support UTF-8 Characters
 		for (var i = 0, l = this.data.length; i < l; i++) {
 			var byteArray = [];
 			var code = this.data.charCodeAt(i);

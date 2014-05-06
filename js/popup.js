@@ -3,8 +3,22 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
   height : 100
 });
 
+function loadURL () {
+  chrome.tabs.getSelected(null, function(tab) {
+          var tabId = tab.id;
+          tabUrl = tab.url;
+          document.getElementById("text").value = tab.url;
+          makeCode();
+      });
+
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  loadURL();
+});
+
+
 function makeCode () {    
-  var url = document.getElementById("text").value
   var elText = document.getElementById("text");
   
   if (!elText.value) {
