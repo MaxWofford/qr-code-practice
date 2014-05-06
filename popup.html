@@ -10,10 +10,10 @@
 
       img {
         margin: 5px;
-        border: 2px solid black;
+        border: 2px solid white;
         vertical-align: middle;
-        width: 75px;
-        height: 75px;
+        width: 150px;
+        height: 150px;
       }
     </style>
 
@@ -23,11 +23,15 @@
       -
       - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
      -->
-    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
     <script src="popup.js"></script>
   </head>
   <body>
+    <input id="text" type="text" value="http://jindo.dev.naver.com/collie" style="width:80%" /><br />
     <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+
+    <script type="text/javascript" src="popup.js"></script>
   </body>
 </html>
 
