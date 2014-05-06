@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "QR code",
-  "description": "This extension generates a qr-code from anything in the omnibox",
+  "description": "This extension generates a qr-code from a URL in the omnibox",
   "version": "1.0",
 
   "browser_action": {
