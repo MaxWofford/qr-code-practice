@@ -4,8 +4,7 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 });
 
 function makeCode () {    
-  url = window.location.href;
-  document.getElementById("text").value = url
+  var url = document.getElementById("text").value
   var elText = document.getElementById("text");
   
   if (!elText.value) {
