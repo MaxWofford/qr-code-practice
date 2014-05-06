@@ -8,7 +8,7 @@ function makeCode () {
   var elText = document.getElementById("text");
   
   if (!elText.value) {
-    alert("Input a text");
+    alert("Input a something");
     elText.focus();
     return;
   }
